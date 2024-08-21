@@ -31,7 +31,7 @@ const config: Config = {
       boxShadow: {
         cardShadow: "0px 0px 16px 6px #8080801F",
         faqShadow: "0px 0px 16px 6px #8080801F",
-      }
+      },
     },
   },
   plugins: [],
