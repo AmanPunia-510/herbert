@@ -14,8 +14,8 @@ const config: Config = {
           20:"#010101",
         },
         orange: {
-          10: "FF9748",
-          20:"3FF4C24",
+          10: "#FF9748",
+          20:"#FF4C24",
         }
       },
       fontSize: {
