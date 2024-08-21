@@ -2,18 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-*{
+* {
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
- 
-@layer components{
-  .container{
-    @apply max-w-[1188px] px-6 mx-auto
+
+@layer components {
+  .container {
+    @apply max-w-[1188px] px-6 mx-auto;
   }
-  .row{
-    @apply flex flex-wrap flex-row -mx-3
+  .row {
+    @apply flex flex-wrap flex-row -mx-3;
+  }
+  .common_padding {
+    @apply lg:py-[60px] md:py-10 py-8;
   }
 }
