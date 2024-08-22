@@ -7,6 +7,7 @@ const Team = () => {
       <div className="container">
         <div className="row relative">
           <div className="col-5">
+            <Heading blackText="" orangeText=""/>
           </div>
           <div className="col-7"></div>
         </div>
