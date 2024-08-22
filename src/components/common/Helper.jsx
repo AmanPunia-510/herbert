@@ -1,4 +1,4 @@
-import { FarbookLogo, InstagramLogo, LinkedinLogo, PlansSvg } from './Icon'
+import { FacebookLogo, InstagramLogo, LinkedinLogo, PlansSvg } from './Icon'
 
 export const FOOTER_LINKS = [
     {
@@ -9,12 +9,11 @@ export const FOOTER_LINKS = [
         title: 'Support',
         links: ['Help Center', 'Term & Conditions', 'Privacy Policy'],
     },
-    // {
-    //     title: 'Follow Us',
-    //     links: [FacebookLogo, InstagramLogo, LinkedinLogo]
-    // }
+    {
+        title: 'Follow Us',
+        links: [FacebookLogo, InstagramLogo, LinkedinLogo]
+    }
 ];
-
 export const PLANS_CARD = [
     {
         heading: "$5/mo",

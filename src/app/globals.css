@@ -12,9 +12,11 @@
   .container {
     @apply max-w-[1188px] px-6 mx-auto;
   }
+
   .row {
     @apply flex flex-wrap flex-row -mx-3;
   }
+
   .common_padding {
     @apply lg:py-[60px] md:py-10 py-8;
   }
