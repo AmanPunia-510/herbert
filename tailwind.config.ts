@@ -19,12 +19,12 @@ const config: Config = {
           30:"#FFF8F2"
         },
         grey: {
-          10: "#00000029"
+          10: "#00000029",
         }
       },
       fontSize: {
         custom_xl: ["44px", "52px"],
-        custom_2xl: ["56px", "66px"]
+        custom_2xl: ["56px", "66px"],
       },
       fontFamily: {
         rubik: ["Rubik", 'sans-serif'],
