@@ -1,4 +1,4 @@
-import { FarbookLogo, InstagramLogo, LinkedinLogo } from './Icon'
+import { FacebookLogo, InstagramLogo, LinkedinLogo } from './Icon'
 
 export const FOOTER_LINKS = [
     {
@@ -9,8 +9,8 @@ export const FOOTER_LINKS = [
         title: 'Support',
         links: ['Help Center', 'Term & Conditions', 'Privacy Policy'],
     },
-    // {
-    //     title: 'Follow Us',
-    //     links: [FacebookLogo, InstagramLogo, LinkedinLogo]
-    // }
+    {
+        title: 'Follow Us',
+        links: [FacebookLogo, InstagramLogo, LinkedinLogo]
+    }
 ];
