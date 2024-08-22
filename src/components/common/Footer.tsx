@@ -1,8 +1,15 @@
-import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+      <div className='container'>
+        <div className='row'>
+          <div className='w-5/12 px-3'>
+        
+          </div>
+        </div>
+    </div>
+    </>
   )
 }
 
