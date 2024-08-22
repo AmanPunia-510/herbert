@@ -14,16 +14,17 @@ const config: Config = {
           20: "#010101",
         },
         orange: {
-          10: "FF9748",
-          20: "3FF4C24",
+          10: "#FF9748",
+          20: "#FF4C24",
+          30: "#FFF8F2",
         },
         grey: {
-          10: "#00000029"
+          10: "#00000029",
         }
       },
       fontSize: {
         custom_xl: ["44px", "52px"],
-        custom_2xl: ["56px", "66px"]
+        custom_2xl: ["56px", "66px"],
       },
       fontFamily: {
         rubik: ["Rubik", 'sans-serif'],
