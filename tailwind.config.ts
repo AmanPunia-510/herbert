@@ -10,20 +10,28 @@ const config: Config = {
     extend: {
       colors: {
         black: {
-          10:"#5F5F5F",
-          20:"#010101",
+          10: "#5F5F5F",
+          20: "#010101",
         },
         orange: {
+<<<<<<< HEAD
           10: "#FF9748",
           20:"#FF4C24",
+=======
+          10: "FF9748",
+          20: "3FF4C24",
+        },
+        grey: {
+          10: "#00000029"
+>>>>>>> 4805d33e378befc3470f1b0da211845f2b8becb1
         }
       },
       fontSize: {
         custom_xl: ["44px", "52px"],
-        custom_2xl:["56px","66px"]
+        custom_2xl: ["56px", "66px"]
       },
       fontFamily: {
-        rubik: ["Rubik",'sans-serif'],
+        rubik: ["Rubik", 'sans-serif'],
       },
       boxShadow: {
         cardShadow: "0px 0px 16px 6px #8080801F",
