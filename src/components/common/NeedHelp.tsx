@@ -18,7 +18,7 @@ const NeedHelp = () => {
         <div className="flex items-center gap-4 justify-center pt-[42px]">
           <Button
             text="Start your conversation"
-            className="bg-white text-orange-10"
+            className="bg-white !text-orange-10"
           />
           <Button text="Learn More" className="bg-transparent text-white border border-solid border-white rounded-[8px]"/>
         </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const VisaHandbook = () => {
   return (
     <>
-      <div className='container common_padding'>
+      <div className='container common_padding pb-0'>
         <div className='max-w-[1023px]'>
           <div className='row items-center'>
             <div className='lg:w-1/2 px-3 max-w-[478px]'>

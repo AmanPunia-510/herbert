@@ -24,16 +24,30 @@ const Footer = () => {
                   const hasImageLinks = section.links.some(link => typeof link !== 'string');
 
                   return (
-                    <div key={sectionIndex} className="sm:w-1/3 px-3 w-1/2 max-lg:pt-5">
-                      <h4 className="font-medium text-black-20 leading-5 pb-2 opacity-90">{section.title}</h4>
-                      <ul className={hasImageLinks ? 'flex' : ''}>
+                    <div
+                      key={sectionIndex}
+                      className="sm:w-1/3 px-3 w-1/2 max-lg:pt-5"
+                    >
+                      <h4 className="font-medium text-black-20 leading-5 pb-4 opacity-90">
+                        {section.title}
+                      </h4>
+                      <ul className={hasImageLinks ? "flex gap-3" : ""}>
                         {section.links.map((link, linkIndex) => (
-                          <li key={linkIndex} className={`pt-2 text-black-10 leading-6 ${typeof link !== 'string' ? 'size-8 rounded-full flex items-center justify-center' : ''}`}>
-                            {typeof link === 'string' ? (
+                          <li
+                            key={linkIndex}
+                            className={`text-black-10 leading-6 ${
+                              typeof link !== "string"
+                                ? "size-9 rounded-full flex items-center justify-center bg-[#FFEDDA]"
+                                : ""
+                            }`}
+                          >
+                            {typeof link === "string" ? (
                               <a href="/">{link}</a>
                             ) : (
                               <a href="/">
-                                {React.createElement(link, { className: 'w-6 h-6' })}
+                                {React.createElement(link, {
+                                  className: "w-6 h-6",
+                                })}
                               </a>
                             )}
                           </li>
