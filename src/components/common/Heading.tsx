@@ -1,6 +1,6 @@
 type PRIMARY_HEADING_PROPS = {
   className?: string;
-  textName: string;
+  textName?: string;
   orangeTextClass?: string;
   blackTextClass?: string;
   orangeText?: string;

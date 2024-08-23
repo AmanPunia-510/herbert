@@ -1,9 +1,9 @@
 interface BUTTON {
   text: string;
-  className: string;
+  className?: string;
 }
 const Button = ({ className, text }: BUTTON) => {
-  const BUTTON_classes = `py-[14px] px-6 text-white bg-orange-10 rounded-lg ${className}`
+  const BUTTON_classes = `py-[14px] px-6 text-white bg-orange-10 rounded-lg font-semibold ${className}`
   return (
     <button className={BUTTON_classes}>{text}</button>
   )
