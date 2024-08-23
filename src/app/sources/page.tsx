@@ -1,20 +1,22 @@
-import BordersCode from '@/components/source/BordersCode'
-import Regulation from '@/components/source/Regulation'
-import ResidenceAct from '@/components/source/ResidenceAct'
-import VisaCode from '@/components/source/VisaCode'
-import VisaHandbook from '@/components/source/VisaHandbook'
-import React from 'react'
+import BordersCode from "@/components/source/BordersCode";
+import Regulation from "@/components/source/Regulation";
+import ResidenceAct from "@/components/source/ResidenceAct";
+import SourceHero from "@/components/source/SourceHero";
+import VisaCode from "@/components/source/VisaCode";
+import VisaHandbook from "@/components/source/VisaHandbook";
+import React from "react";
 
 const page = () => {
   return (
-      <>
+    <>
+      <SourceHero />
       <BordersCode />
       <Regulation />
       <ResidenceAct />
       <VisaCode />
-      <VisaHandbook/>
+      <VisaHandbook />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

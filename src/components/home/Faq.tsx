@@ -4,7 +4,7 @@ import Paragraph from "../common/Paragraph";
 
 const Faq = () => {
   return (
-    <div className="common_padding">
+    <div className="common_padding pb-0">
       <div className="container">
         <Heading
           blackText="Frequently Asked "
