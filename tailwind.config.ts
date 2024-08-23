@@ -34,6 +34,9 @@ const config: Config = {
         cardShadow: "0px 0px 16px 6px #8080801F",
         faqShadow: "0px 0px 16px 6px #8080801F",
       },
+      backgroundImage: {
+        heroSection:'/assets/images/home/png/hero-bg-img.png'
+      }
     },
   },
   plugins: [],

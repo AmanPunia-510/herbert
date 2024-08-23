@@ -2,9 +2,9 @@ import React from 'react';
 import Image from "next/image";
 import Paragraph from "./Paragraph";
 import { FOOTER_LINKS } from "./Helper";
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from './Icon';
 
 const Footer = () => {
+  const curretDate = new Date().getFullYear()
   return (
     <>
       <div className='bg-orange-30'>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='w-full h-[1px] bg-black-20 mt-10 opacity-30'></div>
-        <p className='text-center text-black-10 py-4'>Copyright © 2024 herbert, All rights reserved</p>
+        <p className='text-center text-black-10 py-4'>Copyright © {curretDate} herbert, All rights reserved</p>
       </div>
     </>
   );

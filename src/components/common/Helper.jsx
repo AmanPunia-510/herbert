@@ -41,3 +41,31 @@ export const PLANS_CARD = [
         buttonText: "Upgrade to Premium",
     },
 ]
+
+export const FAQ_DATA = [
+    {
+        id: 1,
+        heading: 'first querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    }, {
+        id: 2,
+        heading: 'second querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    }, {
+        id: 3,
+        heading: 'third querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    }, {
+        id: 4,
+        heading: 'fourth querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    }, {
+        id: 5,
+        heading: 'fifth querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    }, {
+        id: 6,
+        heading: 'sixth querstion of faq',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit quia adipisci voluptatibus cupiditate molestiae, libero nisi, obcaecati qui earum, esse nemo atque eaque odio quibusdam porro dolores ducimus deserunt?'
+    },
+]
