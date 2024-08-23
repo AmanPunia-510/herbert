@@ -1,4 +1,3 @@
-import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,11 +17,7 @@ const config: Config = {
         orange: {
           10: "#FF9748",
           20: "#FF4C24",
-<<<<<<< HEAD
-          30: "#FFF8F2",
-=======
-          30:"#FFF8F2"
->>>>>>> c02992218b843387d2c40fc56e433cd1236f6b09
+          30: "#FFF8F2"
         },
         grey: {
           10: "#00000029",
@@ -41,7 +36,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [],
 };
 
 export default config;
