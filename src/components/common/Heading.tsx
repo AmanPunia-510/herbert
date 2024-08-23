@@ -5,6 +5,7 @@ type PRIMARY_HEADING_PROPS = {
   blackTextClass?: string;
   orangeText?: string;
   blackText?: string;
+  blackTextOne?: string;
 };
 const Heading = ({
   className,
@@ -13,6 +14,7 @@ const Heading = ({
   blackTextClass,
   orangeTextClass,
   orangeText,
+  blackTextOne,
 }: PRIMARY_HEADING_PROPS) => {
   return (
     <h2
@@ -21,7 +23,7 @@ const Heading = ({
       {textName}
       <span className={`text-black ${blackTextClass}`}>{blackText}</span>
       <span className={`text-orange-20 ${orangeTextClass}`}>{orangeText}</span>
-      <span className={`text-black ${blackTextClass}`}>{blackText}</span>
+      <span className={`text-black ${blackTextClass}`}>{blackTextOne}</span>
     </h2>
   );
 };

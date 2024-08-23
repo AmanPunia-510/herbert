@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|divider).js"
   ],
   theme: {
     extend: {
@@ -16,7 +17,7 @@ const config: Config = {
         orange: {
           10: "#FF9748",
           20: "#FF4C24",
-          30: "#FFF8F2",
+          30: "#FFF8F2"
         },
         grey: {
           10: "#00000029",

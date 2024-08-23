@@ -25,7 +25,7 @@ const Plans = () => {
                    ${
                      index === 1
                        ? "flex justify-center" // Center the middle column without a border
-                       : index === 2
+                       : index === 2 // ye code sara chatgpt ka hai 
                        ? "flex justify-end border-solid border-[1px] border-t-0 border-r-0 border-b-0 border-l-[1px] border-[#D6D0CB]" // Align the last column to the end with a right and left border
                        : "border-solid border-r-[1px] border-[#D6D0CB]" // Add right border to the first column
                    }`}
