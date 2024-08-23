@@ -17,7 +17,7 @@ const config: Config = {
         orange: {
           10: "#FF9748",
           20: "#FF4C24",
-          30:"#FFF8F2"
+          30: "#FFF8F2"
         },
         grey: {
           10: "#00000029",
