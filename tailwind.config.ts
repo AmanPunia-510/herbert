@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -5,6 +6,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|divider).js"
   ],
   theme: {
     extend: {
@@ -16,7 +18,11 @@ const config: Config = {
         orange: {
           10: "#FF9748",
           20: "#FF4C24",
+<<<<<<< HEAD
           30: "#FFF8F2",
+=======
+          30:"#FFF8F2"
+>>>>>>> c02992218b843387d2c40fc56e433cd1236f6b09
         },
         grey: {
           10: "#00000029",
@@ -35,7 +41,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 
 export default config;

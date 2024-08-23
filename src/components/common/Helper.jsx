@@ -14,7 +14,10 @@ export const FOOTER_LINKS = [
         links: [FacebookLogo, InstagramLogo, LinkedinLogo]
     }
 ];
+<<<<<<< HEAD
     
+=======
+>>>>>>> c02992218b843387d2c40fc56e433cd1236f6b09
 
 export const PLANS_CARD = [
     {
