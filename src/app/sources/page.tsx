@@ -10,9 +10,9 @@ const page = () => {
   return (
     <>
       <SourceHero />
+      <ResidenceAct />
       <BordersCode />
       <Regulation />
-      <ResidenceAct />
       <VisaCode />
       <VisaHandbook />
     </>

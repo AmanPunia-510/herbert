@@ -5,7 +5,7 @@ import Image from 'next/image'
 const VisaHandbook = () => {
   return (
     <>
-      <div className='container common_padding'>
+      <div className='container common_padding pb-0'>
         <div className='max-w-[1023px]'>
           <div className='row items-center'>
             <div className='lg:w-1/2 px-3 max-w-[478px]'>
@@ -16,7 +16,6 @@ const VisaHandbook = () => {
                 <li className='text-black-10 list-disc'>Clarification on complex cases and exceptions</li>
                 <li className='text-black-10 list-disc'>Nuanced interpretations of immigration laws and regulations</li>
               </ul>
-              <Paragraph textName='Herbert utilizes this act to provide precise information on legal residence requirements and pathways to living in Germany.' className='pt-2' />
             </div>
             <div className='lg:w-1/2 px-3 flex justify-end items-end'>
               <Image
