@@ -9,7 +9,7 @@ const VisaCode = () => {
           <div className='lg:w-1/2 px-3'>
             <div className='row'>
               <div className='w-1/2 px-3'>
-                <div className="bg-white max-w-[248px] w-full h-[188px] flex justify-center items-center rounded-lg">
+                <div className="bg-white max-w-[248px] w-full h-[188px] flex justify-center items-center rounded-lg flex-col">
                   <Image
                     src='/assets/images/sources/png/visa-application-img.png'
                     width={72}
