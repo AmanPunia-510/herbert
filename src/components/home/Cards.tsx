@@ -6,7 +6,7 @@ const Cards = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className='lg:w-1/3 md:w-1/2 w-full  px-3 h-full'>
+        <div className='lg:w-1/3 md:w-1/2 px-3'>
           <div className='border border-grey-10 rounded-lg h-full max-w-[364px] mih-h-[196px] w-full hover:scale-y-105 hover:bg-white hover:border-none hover:shadow-cardShadow ease-linear duration-300'>
             <div className='py-5 px-[75px]'>
               <div className='size-14 rounded-full mx-auto'>
