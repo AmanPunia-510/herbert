@@ -35,7 +35,6 @@ const BordersCode = () => {
                   </li>
                   <li className="list-disc">Border crossing procedures</li>
                 </ul>
-                <Button text="Learn more" className="font-semibold mt-11" />
               </div>
             </div>
           </div>

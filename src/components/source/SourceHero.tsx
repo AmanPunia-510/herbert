@@ -11,7 +11,7 @@ const SourceHero = () => {
           blackText="The Foundations of "
           orangeText="German Immigration "
           blackTextOne="Expertise"
-          className="max-w-[807px] mx-auto text-center"
+          className="max-w-[807px] mx-auto text-center !text-custom_2xl"
         />
         <Paragraph
           textName="Herbert, our AI chatbot, is built on a comprehensive understanding of German immigration law. To ensure accuracy and reliability, Herbert's knowledge base is derived from the following authoritative sources:"

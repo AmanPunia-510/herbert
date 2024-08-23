@@ -6,15 +6,15 @@ import Image from "next/image";
 const Regulation = () => {
   return (
     <div className="common_padding relative">
-      <div className="container">
+      <div className="container !max-w-[1055px]">
         <Heading
-          textName="Herbert Main"
-          orangeText=" Features"
+          textName="Employment "
+          orangeText="Regulation"
           className="text-center"
         />
         <Paragraph
-          textName="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed."
-          className="max-w-[556px] text-center pt-4 mx-auto"
+          textName="This regulation details the conditions under which foreign nationals can work in Germany. Herbert's training in the Beschäftigungsverordnung allows for accurate guidance on:"
+          className="max-w-[716px] text-center pt-4 mx-auto"
         />
         <div className="row items-center pt-14">
           <div className="w-4/12 px-3">
@@ -46,13 +46,13 @@ const Regulation = () => {
             <div className="flex justify-center w-full">
               <Image
                 src="/assets/images/home/png/work-tourism.png"
-                width={324}
-                height={452}
+                width={244}
+                height={340}
                 alt="work-tourism-webp"
               />
             </div>
           </div>
-          <div className="w-4/12 px-3 flex justify-end">
+          <div className="w-4/12 px-3">
             <div className="max-w-[322px]">
               <div>
                 <div>
@@ -84,7 +84,15 @@ const Regulation = () => {
         src="/assets/images/home/png/features-ellipse-right.png"
         width={86}
         height={369}
-        className="absolute left-0 top-72"
+        className="absolute left-0 top-56"
+        alt="work-tourism-webp"
+      />
+
+      <Image
+        src="/assets/images/home/png/regulation-bottom-layer.png"
+        width={2100}
+        height={270}
+        className="absolute left-0 bottom-[-215px] -z-[1]"
         alt="work-tourism-webp"
       />
     </div>
