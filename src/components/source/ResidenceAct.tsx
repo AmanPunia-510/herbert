@@ -6,10 +6,10 @@ import Image from 'next/image'
 const ResidenceAct = () => {
   return (
     <>
-      <div className='container common_padding'>
+      <div className='container common_padding max-w-[1023px]'>
         <div className='row items-center'>
           <div className='lg:w-1/2 px-3 max-w-[478px]'>
-            <Heading blackText='Residence' orangeText=' Act'/>
+            <Heading blackText='Residence' orangeText=' Act' />
             <Paragraph textName='The Aufenthaltsgesetz is the cornerstone of German immigration law. This act governs:' className='pt-4' />
             <ul className='pt-2 pl-6'>
               <li className='text-black-10 list-disc'>Entry into Germany</li>
