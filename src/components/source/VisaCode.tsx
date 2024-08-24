@@ -8,8 +8,8 @@ const VisaCode = () => {
   return (
     <div className="common_padding">
       <div className="bg-orange-30 py-[100px]">
-        <div className="container">
-          <div className="row items-center justify-between">
+        <div className="container flex items-center justify-center">
+          <div className="row items-center justify-between max-lg:max-w-[450px]">
             <div className="lg:w-1/2 px-3">
               <div className="row items-center">
                 <div className="w-1/2 px-3">
@@ -20,7 +20,7 @@ const VisaCode = () => {
                       height={72}
                       alt="application"
                     />
-                    <h4 className="font-medium text-xl leading-6 text-center max-w-[197px] pt-4">
+                    <h4 className="font-medium sm:text-xl leading-6 text-center max-w-[197px] pt-4">
                       Visa application processes
                     </h4>
                   </div>
@@ -33,7 +33,7 @@ const VisaCode = () => {
                       height={72}
                       alt="application"
                     />
-                    <h4 className="font-medium text-xl leading-6 text-center max-w-[197px] pt-4">
+                    <h4 className="font-medium sm:text-xl leading-6 text-center max-w-[197px] pt-4">
                       Required documentation
                     </h4>
                   </div>
@@ -44,14 +44,14 @@ const VisaCode = () => {
                       height={72}
                       alt="application"
                     />
-                    <h4 className="font-medium text-xl leading-6 text-center max-w-[197px] pt-4">
+                    <h4 className="font-medium sm:text-xl leading-6 text-center max-w-[197px] pt-4">
                       Visa fees and processing times
                     </h4>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 px-3 max-w-[473px] flex justify-end flex-col">
+            <div className="lg:w-1/2 px-3 max-w-[473px] flex justify-end flex-col max-lg:pt-14">
               <Heading blackText="Visa" orangeText=" Code" />
               <Paragraph
                 textName="This code standardizes procedures for short-stay visas in the Schengen Area. Herberts understanding of the Visa-Kodex ensures accurate information on: "

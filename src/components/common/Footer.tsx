@@ -11,11 +11,13 @@ const Footer = () => {
         <div className='container pt-[212px]'>
           <div className='row justify-between w-full'>
             <div className='lg:w-5/12 px-3'>
-              <Image
-                src='/assets/images/home/png/logo-img.png'
-                width={326}
-                height={98}
-                alt="footer logo" />
+              <a href="/" className='inline-block max-md:max-w-[200px]'>
+                <Image
+                  src='/assets/images/home/png/logo-img.png'
+                  width={326}
+                  height={98}
+                  alt="footer logo" />
+              </a>
               <Paragraph textName="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." className="lg:pt-4 pt-3 max-w-[412px]" />
             </div>
             <div className="lg:w-6/12 px-3 w-full max-lg:justify-between">
@@ -35,14 +37,13 @@ const Footer = () => {
                         {section.links.map((link, linkIndex) => (
                           <li
                             key={linkIndex}
-                            className={`text-black-10 leading-6 ${
-                              typeof link !== "string"
-                                ? "size-9 rounded-full flex items-center justify-center bg-[#FFEDDA]"
-                                : ""
-                            }`}
+                            className={`text-black-10 leading-6 ${typeof link !== "string"
+                              ? "size-9 rounded-full flex items-center justify-center bg-[#FFEDDA] hover:scale-105 duration-300 ease-linear hover:shadow-cardShadow cursor-pointer"
+                              : ""
+                              }`}
                           >
                             {typeof link === "string" ? (
-                              <a href="/">{link}</a>
+                              <a href="/" className='hover:text-orange-20 ease-linear duration-300 pt-2'>{link}</a>
                             ) : (
                               <a href="/">
                                 {React.createElement(link, {

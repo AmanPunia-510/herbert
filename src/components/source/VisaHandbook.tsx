@@ -6,8 +6,8 @@ const VisaHandbook = () => {
   return (
     <div className="relative">
       <div className="container common_padding pb-0">
-        <div className="max-w-[1023px]">
-          <div className="row items-center">
+        <div className="max-w-[1023px] flex items-center justify-center">
+          <div className="row items-center max-lg:max-w-[450px]">
             <div className="lg:w-1/2 px-3 max-w-[478px]">
               <Heading blackText="Visa" orangeText=" Handbook" />
               <Paragraph
@@ -26,13 +26,15 @@ const VisaHandbook = () => {
                 </li>
               </ul>
             </div>
-            <div className="lg:w-1/2 px-3 flex justify-end items-end">
-              <Image
-                src="/assets/images/sources/png/hello-man-img.png"
-                alt="hello  man"
-                width={392}
-                height={457}
-              />
+            <div className="lg:w-1/2 px-3 flex lg:justify-end lg:items-end w-full items-center justify-center">
+              <div className="max-sm:max-w-[261px] max-lg:mt-14 flex items-center justify-center">
+                <Image
+                  src="/assets/images/sources/png/hello-man-img.png"
+                  alt="hello  man"
+                  width={392}
+                  height={457}
+                />
+              </div>
             </div>
           </div>
         </div>
