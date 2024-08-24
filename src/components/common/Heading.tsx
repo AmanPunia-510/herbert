@@ -22,7 +22,7 @@ const Heading = ({
     >
       {textName}
       <span className={`text-black ${blackTextClass}`}>{blackText}</span>
-      <span className={`text-orange-20 ${orangeTextClass}`}>{orangeText}</span>
+      <span className={`text-orange-20 font-rubik font-semibold ${orangeTextClass}`}>{orangeText}</span>
       <span className={`text-black ${blackTextClass}`}>{blackTextOne}</span>
     </h2>
   );

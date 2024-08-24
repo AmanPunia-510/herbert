@@ -42,15 +42,15 @@ const Navbar = () => {
             className={`flex items-center gap-11 max-lg:fixed top-0 max-lg:bg-white max-lg:flex-col max-lg:w-full max-lg:h-full max-lg:items-center max-lg:justify-center ease-linear duration-300 ${nav ? '-right-[100%]' : 'right-0'}`}
           >
             <li>
-              <a href="" className="text-black-10">Herbert</a>
+              <a href="" className="text-black-10 hover:text-orange-20 ease-linear duration-300">Herbert</a>
             </li>
             <li className="w-[327px] bg-black-10 mt-6 lg:hidden h-[1px] opacity-20"></li>
             <li>
-              <a href="" className="text-black-10">Sources</a>
+              <a href="" className="text-black-10 hover:text-orange-20 ease-linear duration-300">Sources</a>
             </li>
             <li className="w-[327px] bg-black-10 mt-6 lg:hidden h-[1px] opacity-20"></li>
             <li>
-              <a href="" className="text-black-10">Our Vision</a>
+              <a href="" className="text-black-10 hover:text-orange-20 ease-linear duration-300">Our Vision</a>
             </li>
             <Button text="Start your conversation with Herbert" className="lg:hidden" />
           </ul>

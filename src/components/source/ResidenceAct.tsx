@@ -27,13 +27,15 @@ const ResidenceAct = () => {
               className="pt-2"
             />
           </div>
-          <div className="lg:w-1/2 px-3 flex justify-end items-end">
-            <Image
-              src="/assets/images/sources/png/hello-man-img.png"
-              alt="hello  man"
-              width={392}
-              height={457}
-            />
+          <div className="lg:w-1/2 px-3 flex lg:justify-end lg:items-end justify-center items-center">
+            <div className='max-sm:max-w-[261px]'>
+              <Image
+                src="/assets/images/sources/png/hello-man-img.png"
+                alt="hello  man"
+                width={392}
+                height={457}
+              />
+            </div>
           </div>
         </div>
       </div>
