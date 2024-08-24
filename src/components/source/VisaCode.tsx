@@ -6,7 +6,7 @@ import Button from "../common/Button";
 
 const VisaCode = () => {
   return (
-    <div className="common_padding">
+    <div className="common_padding relative">
       <div className="bg-orange-30 py-[100px]">
         <div className="container">
           <div className="row items-center justify-between">
@@ -62,6 +62,14 @@ const VisaCode = () => {
           </div>
         </div>
       </div>
+
+      <Image
+        width={40}
+        height={265}
+        src="/assets/images/home/png/visacode-section-ellipse.png"
+        alt="visacode-section-ellipse"
+        className="absolute top-40 right-0 z-0 pointer-events-none"
+      />
     </div>
   );
 };

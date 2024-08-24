@@ -16,33 +16,8 @@ const Regulation = () => {
           textName="This regulation details the conditions under which foreign nationals can work in Germany. Herbert's training in the Beschäftigungsverordnung allows for accurate guidance on:"
           className="max-w-[716px] text-center pt-4 mx-auto"
         />
-        <div className="row items-center pt-14">
-          <div className="w-4/12 px-3">
-            <div className="max-w-[322px]">
-              <div>
-                <div className="flex justify-end">
-                  <div className="size-10 rounded-full bg-orange-10 text-white font-medium font-rubik flex justify-center items-center text-2xl">
-                    1
-                  </div>
-                </div>
-                <p className="pt-4 font-medium text-xl text-black-20 text-end">
-                  Work permit requirements
-                </p>
-              </div>
-
-              <div className="pt-14">
-                <div className="flex justify-end">
-                  <div className="size-10 rounded-full bg-orange-10 text-white font-medium font-rubik flex justify-center items-center text-2xl">
-                    2
-                  </div>
-                </div>
-                <p className="pt-4 font-medium text-xl text-black-20 text-end">
-                  Job-seeking visas
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-4/12 px-3">
+        <div className="row max-sm:justify-center sm:items-center pt-6 sm:pt-14">
+          <div className="w-full px-3 sm:hidden pb-11">
             <div className="flex justify-center w-full">
               <Image
                 src="/assets/images/home/png/work-tourism.png"
@@ -52,7 +27,42 @@ const Regulation = () => {
               />
             </div>
           </div>
-          <div className="w-4/12 px-3">
+          <div className="w-1/2 sm:w-4/12 px-3">
+            <div className="max-w-[322px]">
+              <div>
+                <div className="flex sm:justify-end">
+                  <div className="size-10 rounded-full bg-orange-10 text-white font-medium font-rubik flex justify-center items-center text-2xl">
+                    1
+                  </div>
+                </div>
+                <p className="pt-4 font-medium text-xl text-black-20 sm:text-end">
+                  Work permit requirements
+                </p>
+              </div>
+
+              <div className="pt-6 sm:pt-14">
+                <div className="flex sm:justify-end">
+                  <div className="size-10 rounded-full bg-orange-10 text-white font-medium font-rubik flex justify-center items-center text-2xl">
+                    2
+                  </div>
+                </div>
+                <p className="pt-4 font-medium text-xl text-black-20 sm:text-end">
+                  Job-seeking visas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-4/12 px-3 max-sm:hidden">
+            <div className="flex justify-center w-full">
+              <Image
+                src="/assets/images/home/png/work-tourism.png"
+                width={244}
+                height={340}
+                alt="work-tourism-webp"
+              />
+            </div>
+          </div>
+          <div className="w-1/2 sm:w-4/12 px-3">
             <div className="max-w-[322px]">
               <div>
                 <div>
@@ -65,7 +75,7 @@ const Regulation = () => {
                 </p>
               </div>
 
-              <div className="pt-14">
+              <div className="pt-6 sm:pt-14">
                 <div>
                   <div className="size-10 rounded-full bg-orange-10 text-white font-medium font-rubik flex justify-center items-center text-2xl">
                     4
@@ -84,7 +94,7 @@ const Regulation = () => {
         src="/assets/images/home/png/features-ellipse-right.png"
         width={86}
         height={369}
-        className="absolute left-0 top-56"
+        className="absolute left-0 top-56 max-sm:w-[31px]"
         alt="work-tourism-webp"
       />
 
@@ -92,7 +102,7 @@ const Regulation = () => {
         src="/assets/images/home/png/regulation-bottom-layer.png"
         width={2100}
         height={270}
-        className="absolute left-0 bottom-[-215px] -z-[1]"
+        className="absolute left-0 bottom-[-190px] -z-[1]"
         alt="work-tourism-webp"
       />
     </div>

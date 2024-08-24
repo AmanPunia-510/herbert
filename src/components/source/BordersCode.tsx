@@ -6,23 +6,23 @@ import Image from "next/image";
 
 const BordersCode = () => {
   return (
-    <div className="common_padding overflow-hidden">
+    <div className="common_padding overflow-hidden relative">
       <div className="bg-[#FFF8F2] py-[72px]">
         <div className="container">
-          <div className="row items-center">
-            <div className="w-7/12 px-3">
-              <div className="w-full max-w-[701px] h-full">
+          <div className="row items-center max-md:flex-col-reverse max-md:gap-11">
+            <div className="w-full md:w-1/2 lg:w-7/12 sm:px-3">
+              <div className="w-full md:max-w-[701px] h-full max-md:flex max-md:justify-center">
                 <Image
                   width={701}
                   height={570}
                   src="/assets/images/home/png/resources-left.png"
                   alt="resources image"
-                  className="relative -left-[148px]"
+                  className="relative lg:-left-[70px] xl:-left-[148px] max-xl:w-full pointer-events-none z-10 max-md:max-w-[450px]"
                 />
               </div>
             </div>
-            <div className="w-5/12 px-3">
-              <div className="max-w-[472px]">
+            <div className="w-full md:w-1/2 lg:w-5/12 px-3 xl:relative xl:right-5 max-md:flex max-md:justify-center">
+              <div className="max-w-[450px] md:max-w-[472px]">
                 <Heading blackText="Schengen Borders  " orangeText="Code" />
                 <Paragraph
                   textName="As part of the Schengen Area, Germany adheres to this code for border control. Herbert's knowledge of the Schengener Grenzkodex covers:"
@@ -40,6 +40,13 @@ const BordersCode = () => {
           </div>
         </div>
       </div>
+      <Image
+        width={40}
+        height={265}
+        src="/assets/images/home/png/visacode-section-ellipse.png"
+        alt="visacode-section-ellipse"
+        className="absolute bottom-40 right-0 z-0 pointer-events-none"
+      />
     </div>
   );
 };
