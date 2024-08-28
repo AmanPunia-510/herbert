@@ -1,16 +1,55 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
 import Image from "next/image";
 import Paragraph from "./Paragraph";
 import { FOOTER_LINKS } from "./Helper";
+import { gsap } from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-  const curretDate = new Date().getFullYear()
+  useEffect(() => {
+    gsap.fromTo(
+      '.footerleft',
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        ease: 'power3.inOut',
+        scrollTrigger: {
+          trigger: ".footerleft",
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play none none none",
+        }
+      }
+    );
+    gsap.fromTo(
+      '.footerright',
+      { opacity: 0, x: 100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        ease: 'power3.inOut',
+        scrollTrigger: {
+          trigger: ".footerright",
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play none none none",
+        }
+      }
+    );
+  }, []);
+
+  const curretDate = new Date().getFullYear();
   return (
     <>
       <div className='bg-orange-30'>
         <div className='container pt-[212px]'>
           <div className='row justify-between w-full'>
-            <div className='lg:w-5/12 px-3'>
+            <div className='lg:w-5/12 px-3 footerleft'>
               <a href="/" className='inline-block max-md:max-w-[200px]'>
                 <Image
                   src='/assets/images/home/png/logo-img.png'
@@ -20,7 +59,7 @@ const Footer = () => {
               </a>
               <Paragraph textName="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." className="lg:pt-4 pt-3 max-w-[412px]" />
             </div>
-            <div className="lg:w-6/12 px-3 w-full max-lg:justify-between">
+            <div className="lg:w-6/12 px-3 w-full max-lg:justify-between footerright">
               <div className="row">
                 {FOOTER_LINKS.map((section, sectionIndex) => {
                   const hasImageLinks = section.links.some(link => typeof link !== 'string');
@@ -37,7 +76,7 @@ const Footer = () => {
                         {section.links.map((link, linkIndex) => (
                           <li
                             key={linkIndex}
-                            className={`text-black-10 leading-6 ${typeof link !== "string"
+                            className={`text-black-10 leading-6 mt-2 ${typeof link !== "string"
                               ? "size-9 rounded-full flex items-center justify-center bg-[#FFEDDA] hover:scale-105 duration-300 ease-linear hover:shadow-cardShadow cursor-pointer"
                               : ""
                               }`}

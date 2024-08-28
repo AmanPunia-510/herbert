@@ -8,14 +8,14 @@ import React from "react";
 
 const page = () => {
   return (
-    <>
+    <div className='overflow-hidden'>
       <SourceHero />
       <ResidenceAct />
       <BordersCode />
       <Regulation />
       <VisaCode />
       <VisaHandbook />
-    </>
+    </div>
   );
 };
 

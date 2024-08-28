@@ -19,7 +19,7 @@ const Navbar = () => {
             />
           </a>
           <div
-            className="lg:hidden z-20 relative size-6 h-full right-0 cursor-pointer"
+            className="lg:hidden z-40 relative size-6 h-full right-0 cursor-pointer"
             onClick={() => setNav(!nav)}
           >
             {nav ? (
@@ -39,7 +39,7 @@ const Navbar = () => {
             )}
           </div>
           <ul
-            className={`flex items-center gap-11 max-lg:fixed top-0 max-lg:bg-white max-lg:flex-col max-lg:w-full max-lg:h-full max-lg:items-center max-lg:justify-center ease-linear duration-300 ${nav ? '-right-[100%]' : 'right-0'}`}
+            className={`flex items-center gap-11 max-lg:fixed top-0 max-lg:bg-white max-lg:flex-col max-lg:w-full max-lg:h-full max-lg:items-center max-lg:justify-center ease-linear duration-300 z-30 ${nav ? '-right-[100%]' : 'right-0'}`}
           >
             <li>
               <a href="" className="text-black-10 hover:text-orange-20 ease-linear duration-300">Herbert</a>
