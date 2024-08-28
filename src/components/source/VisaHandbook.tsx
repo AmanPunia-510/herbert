@@ -93,7 +93,7 @@ const VisaHandbook = () => {
         alt="hello man"
         width={1603}
         height={686}
-        className="absolute left-0 bottom-[-331px]"
+        className="absolute left-0 bottom-[-331px] -z-[1] pointer-events-none"
       />
     </div>
   );

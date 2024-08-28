@@ -18,7 +18,7 @@ const NeedHelp = () => {
         <div className="flex items-center gap-4 justify-center pt-[42px] max-sm:flex-wrap">
           <Button
             text="Start your conversation"
-            className="bg-white !text-orange-10 max-sm:w-full"
+            className="bg-white !text-orange-10 hover:!bg-transparent hover:!text-white hover:!border hover:border-white max-sm:w-full"
           />
           <Button text="Learn More" className="bg-transparent text-white border border-solid border-white rounded-[8px] max-sm:w-full" />
         </div>
