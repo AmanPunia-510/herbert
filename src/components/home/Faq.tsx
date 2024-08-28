@@ -89,9 +89,9 @@ const Faq: React.FC = () => {
                           </div>
                         </div>
                         <div
-                          ref={(el) =>
-                            contentRefs.current.set(computedIndex, el)
-                          }
+                          ref={(el) => {
+                            contentRefs.current.set(computedIndex, el);
+                          }}
                           className={`accordion-content overflow-hidden duration-300 ease-linear`}
                           style={{
                             maxHeight:
