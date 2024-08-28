@@ -18,15 +18,16 @@ interface AccordionData {
 
 const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<string | null>(null);
-  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const contentRefs = useRef<Map<string, HTMLDivElement | null>>(new Map());
 
   const handleToggle = (index: string) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   const getHeight = (index: string): string => {
-    if (contentRefs.current[index]) {
-      return contentRefs.current[index]!.scrollHeight + "px";
+    const ref = contentRefs.current.get(index);
+    if (ref) {
+      return ref.scrollHeight + "px";
     }
     return "0px";
   };
@@ -89,7 +90,7 @@ const Faq: React.FC = () => {
                         </div>
                         <div
                           ref={(el) =>
-                            (contentRefs.current[computedIndex] = el)
+                            contentRefs.current.set(computedIndex, el)
                           }
                           className={`accordion-content overflow-hidden duration-300 ease-linear`}
                           style={{
