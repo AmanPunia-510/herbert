@@ -69,7 +69,7 @@ const Footer = () => {
                       key={sectionIndex}
                       className="sm:w-1/3 px-3 w-1/2 max-lg:pt-5"
                     >
-                      <h4 className="font-medium text-black-20 leading-5 pb-4 opacity-90">
+                      <h4 className="font-medium text-black-20 leading-5 lg:pb-4 pb-3 opacity-90">
                         {section.title}
                       </h4>
                       <ul className={hasImageLinks ? "flex gap-3" : ""}>
