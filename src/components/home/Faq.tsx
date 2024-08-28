@@ -6,17 +6,27 @@ import Paragraph from "../common/Paragraph";
 import Button from "../common/Button";
 import Image from "next/image";
 
-const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-  const contentRefs = useRef([]);
+// Define types for accordion data structure
+interface AccordionItem {
+  title: string;
+  content: string;
+}
 
-  const handleToggle = (index) => {
+interface AccordionData {
+  items: AccordionItem[];
+}
+
+const Faq: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<string | null>(null);
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const handleToggle = (index: string) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const getHeight = (index) => {
+  const getHeight = (index: string): string => {
     if (contentRefs.current[index]) {
-      return contentRefs.current[index].scrollHeight + "px";
+      return contentRefs.current[index]!.scrollHeight + "px";
     }
     return "0px";
   };
@@ -34,9 +44,9 @@ const Faq = () => {
           textName="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes. "
         />
         <div className="flex flex-col lg:flex-row lg:gap-6 w-full">
-          {ACCORDION_DATA.map((item, outerIndex) => (
+          {ACCORDION_DATA.map((item: AccordionData, outerIndex: number) => (
             <div key={outerIndex} className="lg:max-w-[558px] w-full">
-              {item.items.map((i, index) => {
+              {item.items.map((i: AccordionItem, index: number) => {
                 const computedIndex = `${outerIndex}-${index}`;
                 return (
                   <div
