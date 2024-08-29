@@ -5,7 +5,7 @@ import Navbar from "@/components/common/Navbar";
 import NeedHelp from "@/components/common/NeedHelp";
 import Footer from "@/components/common/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Create Next App",

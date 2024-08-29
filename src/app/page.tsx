@@ -7,15 +7,13 @@ import Team from "@/components/home/Team";
 
 export default function Home() {
   return (
-  
-    <div className='overflow-hidden'>
+    <div className="overflow-hidden">
       <HomeHero />
       <Cards />
       <Features />
       <Plans />
       <Team />
       <Faq />
-      </div>
-  
+    </div>
   );
 }
